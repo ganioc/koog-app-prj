@@ -95,3 +95,176 @@
 2020-07-02T14:50:50.062Z [service] debug: mongoose is connected with mongodb
 2020-07-02T14:50:50.063Z [service] debug: %s %s %s
 2020-07-02T14:50:53.505Z [service] debug: db closed
+2020-07-02T15:05:32.740Z [service] debug: DB object:
+2020-07-02T15:05:32.742Z [service] debug: { mongo_db: 'mydb',
+  mongo_user: 'myTester',
+  mongo_passwd: 'testWont123org',
+  mongo_dbname: 'mydb',
+  mongo_ip: '127.0.0.1',
+  mongo_port: '27017' }
+2020-07-02T15:05:32.743Z [service] debug: uri: %s
+2020-07-02T15:05:32.776Z [service] debug: mongoose is connected with mongodb
+2020-07-02T15:05:32.776Z [service] debug: %s %s %s
+2020-07-02T15:06:20.062Z [service] debug: modelObj:
+2020-07-02T15:06:20.063Z [service] debug: null
+2020-07-02T15:06:24.704Z [service] debug: modelObj:
+2020-07-02T15:06:24.704Z [service] debug: null
+2020-07-02T15:08:12.397Z [service] debug: add:
+2020-07-02T15:08:12.398Z [service] debug: [ '{"username":"admin",',
+  '"email":"",',
+  '"password":"@1234+Abcd","role":0,"usertype":"internal","unused":0,"status":"valid"}',
+  [length]: 3 ]
+2020-07-02T15:08:12.398Z [service] debug: input args:
+2020-07-02T15:08:12.398Z [service] debug: '{"username":"admin","email":"","password":"@1234+Abcd","role":0,"usertype":"internal","unused":0,"status":"valid"}'
+2020-07-02T15:08:12.398Z [service] debug: modelObj:
+2020-07-02T15:08:12.398Z [service] debug: { username: 'admin',
+  email: '',
+  password: '@1234+Abcd',
+  role: 0,
+  usertype: 'internal',
+  unused: 0,
+  status: 'valid' }
+2020-07-02T15:08:12.478Z [service] debug: { _id: 5efdf85cd9407e158533c162,
+  username: 'admin',
+  email: '',
+  password:
+   '$2b$10$MvmNkvRdb/aBpXSYVCehseIMAQJRB2Ae0tGQMPuBhHouWUvILaOOq',
+  role: 0,
+  usertype: 'internal',
+  unused: 0,
+  status: 'valid',
+  createdate: 2020-07-02T15:08:12.462Z,
+  __v: 0 }
+2020-07-02T15:08:17.451Z [service] debug: modelObj:
+2020-07-02T15:08:17.451Z [service] debug: null
+2020-07-02T15:10:11.468Z [service] debug: add:
+2020-07-02T15:10:11.468Z [service] debug: [ '{"username":"john",',
+  '"email":"john@hotmail.com",',
+  '"password":"@123456","role":1,"usertype":"internal","unused":10,"status":"valid"}',
+  [length]: 3 ]
+2020-07-02T15:10:11.468Z [service] debug: input args:
+2020-07-02T15:10:11.469Z [service] debug: '{"username":"john","email":"john@hotmail.com","password":"@123456","role":1,"usertype":"internal","unused":10,"status":"valid"}'
+2020-07-02T15:10:11.469Z [service] debug: modelObj:
+2020-07-02T15:10:11.469Z [service] debug: { username: 'john',
+  email: 'john@hotmail.com',
+  password: '@123456',
+  role: 1,
+  usertype: 'internal',
+  unused: 10,
+  status: 'valid' }
+2020-07-02T15:10:11.536Z [service] debug: { _id: 5efdf8d3d9407e158533c163,
+  username: 'john',
+  email: 'john@hotmail.com',
+  password:
+   '$2b$10$gQLUrUXP87VsSB.nx7Jg2e0kXCMsyEUDBf.wJ6MaxEa7EHbYb01la',
+  role: 1,
+  usertype: 'internal',
+  unused: 10,
+  status: 'valid',
+  createdate: 2020-07-02T15:10:11.533Z,
+  __v: 0 }
+2020-07-02T15:10:15.516Z [service] debug: modelObj:
+2020-07-02T15:10:15.517Z [service] debug: null
+2020-07-02T15:10:51.266Z [service] debug: add:
+2020-07-02T15:10:51.267Z [service] debug: [ '{"username":"mary",',
+  '"email":"mary@hotmail.com",',
+  '"password":"456@123","role":1,"usertype":"external","unused":20,"status":"valid"}',
+  [length]: 3 ]
+2020-07-02T15:10:51.267Z [service] debug: input args:
+2020-07-02T15:10:51.267Z [service] debug: '{"username":"mary","email":"mary@hotmail.com","password":"456@123","role":1,"usertype":"external","unused":20,"status":"valid"}'
+2020-07-02T15:10:51.268Z [service] debug: modelObj:
+2020-07-02T15:10:51.268Z [service] debug: { username: 'mary',
+  email: 'mary@hotmail.com',
+  password: '456@123',
+  role: 1,
+  usertype: 'external',
+  unused: 20,
+  status: 'valid' }
+2020-07-02T15:10:51.334Z [service] debug: { _id: 5efdf8fbd9407e158533c164,
+  username: 'mary',
+  email: 'mary@hotmail.com',
+  password:
+   '$2b$10$yUnErCZJibaBW82KtdtKKOwOHN3WREuMWDqi0iqnG4zT8US948d.a',
+  role: 1,
+  usertype: 'external',
+  unused: 20,
+  status: 'valid',
+  createdate: 2020-07-02T15:10:51.332Z,
+  __v: 0 }
+2020-07-02T15:12:19.874Z [service] debug: 
+createUserinfo
+2020-07-02T15:12:19.875Z [service] debug: [ '{"username":"john","usertype":"internal","tag":"","undelivered":0,"delivered":0,"submitted":0}',
+  [length]: 1 ]
+2020-07-02T15:12:19.875Z [service] debug: input args:
+2020-07-02T15:12:19.875Z [service] debug: '{"username":"john","usertype":"internal","tag":"","undelivered":0,"delivered":0,"submitted":0}'
+2020-07-02T15:12:19.876Z [service] debug: modelObj:
+2020-07-02T15:12:19.876Z [service] debug: { username: 'john',
+  usertype: 'internal',
+  tag: '',
+  undelivered: 0,
+  delivered: 0,
+  submitted: 0 }
+2020-07-02T15:12:19.876Z [service] debug: getUser()
+2020-07-02T15:12:19.876Z [service] debug: { username: 'john' }
+2020-07-02T15:12:19.878Z [service] debug: find in User
+2020-07-02T15:12:19.879Z [service] debug: { _id: 5efdf8d3d9407e158533c163,
+  username: 'john',
+  email: 'john@hotmail.com',
+  password:
+   '$2b$10$gQLUrUXP87VsSB.nx7Jg2e0kXCMsyEUDBf.wJ6MaxEa7EHbYb01la',
+  role: 1,
+  usertype: 'internal',
+  unused: 10,
+  status: 'valid',
+  createdate: 2020-07-02T15:10:11.533Z,
+  __v: 0 }
+2020-07-02T15:12:19.883Z [service] debug: { _id: 5efdf953d9407e158533c165,
+  username: 'john',
+  usertype: 'internal',
+  tag: '',
+  undelivered: 0,
+  delivered: 0,
+  submitted: 0,
+  lastlogin: 2020-07-02T15:12:19.879Z,
+  __v: 0 }
+2020-07-02T15:12:19.883Z [service] info: create userinfo succeed!
+2020-07-02T15:12:27.680Z [service] debug: 
+createUserinfo
+2020-07-02T15:12:27.680Z [service] debug: [ '{"username":"mary","usertype":"external","tag":"","undelivered":0,"delivered":0,"submitted":0}',
+  [length]: 1 ]
+2020-07-02T15:12:27.680Z [service] debug: input args:
+2020-07-02T15:12:27.681Z [service] debug: '{"username":"mary","usertype":"external","tag":"","undelivered":0,"delivered":0,"submitted":0}'
+2020-07-02T15:12:27.681Z [service] debug: modelObj:
+2020-07-02T15:12:27.681Z [service] debug: { username: 'mary',
+  usertype: 'external',
+  tag: '',
+  undelivered: 0,
+  delivered: 0,
+  submitted: 0 }
+2020-07-02T15:12:27.681Z [service] debug: getUser()
+2020-07-02T15:12:27.681Z [service] debug: { username: 'mary' }
+2020-07-02T15:12:27.683Z [service] debug: find in User
+2020-07-02T15:12:27.684Z [service] debug: { _id: 5efdf8fbd9407e158533c164,
+  username: 'mary',
+  email: 'mary@hotmail.com',
+  password:
+   '$2b$10$yUnErCZJibaBW82KtdtKKOwOHN3WREuMWDqi0iqnG4zT8US948d.a',
+  role: 1,
+  usertype: 'external',
+  unused: 20,
+  status: 'valid',
+  createdate: 2020-07-02T15:10:51.332Z,
+  __v: 0 }
+2020-07-02T15:12:27.686Z [service] debug: { _id: 5efdf95bd9407e158533c166,
+  username: 'mary',
+  usertype: 'external',
+  tag: '',
+  undelivered: 0,
+  delivered: 0,
+  submitted: 0,
+  lastlogin: 2020-07-02T15:12:27.684Z,
+  __v: 0 }
+2020-07-02T15:12:27.686Z [service] info: create userinfo succeed!
+2020-07-02T15:12:32.707Z [service] debug: modelObj:
+2020-07-02T15:12:32.707Z [service] debug: null
+2020-07-02T15:12:37.310Z [service] debug: db closed
