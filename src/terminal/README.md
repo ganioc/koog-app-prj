@@ -5,6 +5,7 @@ To talk to db directly using Command Line Input.
 
 ### create a user
 ```
+NODE_ENV='local' node src/terminal/index.js
 
 
 ```

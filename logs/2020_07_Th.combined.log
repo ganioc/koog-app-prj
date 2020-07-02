@@ -1,0 +1,97 @@
+2020-07-02T14:16:13.814Z [service] debug: DB object:
+2020-07-02T14:16:13.816Z [service] debug: { mongo_db: 'mydb',
+  mongo_user: 'myTester',
+  mongo_passwd: 'testWont123org',
+  mongo_dbname: 'mydb',
+  mongo_ip: '127.0.0.1',
+  mongo_port: '27017' }
+2020-07-02T14:16:13.816Z [service] debug: uri: %s
+2020-07-02T14:31:42.687Z [service] debug: DB object:
+2020-07-02T14:31:42.689Z [service] debug: { mongo_db: 'mydb',
+  mongo_user: 'myTester',
+  mongo_passwd: 'testWont123org',
+  mongo_dbname: 'mydb',
+  mongo_ip: '127.0.0.1',
+  mongo_port: '27017' }
+2020-07-02T14:31:42.690Z [service] debug: uri: %s
+2020-07-02T14:31:42.700Z [service] debug: db closed
+2020-07-02T14:31:42.724Z [service] debug: mongoose is connected with mongodb
+2020-07-02T14:31:42.724Z [service] debug: %s %s %s
+2020-07-02T14:31:48.002Z [service] debug: DB object:
+2020-07-02T14:31:48.002Z [service] debug: { mongo_db: 'mydb',
+  mongo_user: 'myTester',
+  mongo_passwd: 'testWont123org',
+  mongo_dbname: 'mydb',
+  mongo_ip: '127.0.0.1',
+  mongo_port: '27017' }
+2020-07-02T14:31:48.002Z [service] debug: uri: %s
+2020-07-02T14:31:48.005Z [service] debug: db closed
+2020-07-02T14:31:48.010Z [service] debug: mongoose is connected with mongodb
+2020-07-02T14:31:48.011Z [service] debug: %s %s %s
+2020-07-02T14:31:48.011Z [service] debug: mongoose is connected with mongodb
+2020-07-02T14:31:48.011Z [service] debug: %s %s %s
+2020-07-02T14:31:50.126Z [service] debug: DB object:
+2020-07-02T14:31:50.127Z [service] debug: { mongo_db: 'mydb',
+  mongo_user: 'myTester',
+  mongo_passwd: 'testWont123org',
+  mongo_dbname: 'mydb',
+  mongo_ip: '127.0.0.1',
+  mongo_port: '27017' }
+2020-07-02T14:31:50.127Z [service] debug: uri: %s
+2020-07-02T14:31:50.132Z [service] debug: mongoose is connected with mongodb
+2020-07-02T14:31:50.133Z [service] debug: %s %s %s
+2020-07-02T14:31:50.133Z [service] debug: mongoose is connected with mongodb
+2020-07-02T14:31:50.133Z [service] debug: %s %s %s
+2020-07-02T14:31:50.133Z [service] debug: mongoose is connected with mongodb
+2020-07-02T14:31:50.133Z [service] debug: %s %s %s
+2020-07-02T14:31:52.316Z [service] debug: DB object:
+2020-07-02T14:31:52.316Z [service] debug: { mongo_db: 'mydb',
+  mongo_user: 'myTester',
+  mongo_passwd: 'testWont123org',
+  mongo_dbname: 'mydb',
+  mongo_ip: '127.0.0.1',
+  mongo_port: '27017' }
+2020-07-02T14:31:52.317Z [service] debug: uri: %s
+2020-07-02T14:31:52.318Z [service] debug: db closed
+2020-07-02T14:31:52.322Z [service] debug: mongoose is connected with mongodb
+2020-07-02T14:31:52.322Z [service] debug: %s %s %s
+2020-07-02T14:31:52.323Z [service] debug: mongoose is connected with mongodb
+2020-07-02T14:31:52.323Z [service] debug: %s %s %s
+2020-07-02T14:31:52.323Z [service] debug: mongoose is connected with mongodb
+2020-07-02T14:31:52.323Z [service] debug: %s %s %s
+2020-07-02T14:31:52.323Z [service] debug: mongoose is connected with mongodb
+2020-07-02T14:31:52.323Z [service] debug: %s %s %s
+2020-07-02T14:32:14.790Z [service] debug: DB object:
+2020-07-02T14:32:14.791Z [service] debug: { mongo_db: 'mydb',
+  mongo_user: 'myTester',
+  mongo_passwd: 'testWont123org',
+  mongo_dbname: 'mydb',
+  mongo_ip: '127.0.0.1',
+  mongo_port: '27017' }
+2020-07-02T14:32:14.792Z [service] debug: uri: %s
+2020-07-02T14:32:14.826Z [service] debug: mongoose is connected with mongodb
+2020-07-02T14:32:14.826Z [service] debug: %s %s %s
+2020-07-02T14:34:17.411Z [service] debug: db closed
+2020-07-02T14:36:49.846Z [service] debug: db closed
+2020-07-02T14:37:17.443Z [service] debug: DB object:
+2020-07-02T14:37:17.445Z [service] debug: { mongo_db: 'mydb',
+  mongo_user: 'myTester',
+  mongo_passwd: 'testWont123org',
+  mongo_dbname: 'mydb',
+  mongo_ip: '127.0.0.1',
+  mongo_port: '27017' }
+2020-07-02T14:37:17.445Z [service] debug: uri: %s
+2020-07-02T14:37:17.479Z [service] debug: mongoose is connected with mongodb
+2020-07-02T14:37:17.479Z [service] debug: %s %s %s
+2020-07-02T14:46:34.571Z [service] debug: db closed
+2020-07-02T14:50:50.027Z [service] debug: DB object:
+2020-07-02T14:50:50.028Z [service] debug: { mongo_db: 'mydb',
+  mongo_user: 'myTester',
+  mongo_passwd: 'testWont123org',
+  mongo_dbname: 'mydb',
+  mongo_ip: '127.0.0.1',
+  mongo_port: '27017' }
+2020-07-02T14:50:50.029Z [service] debug: uri: %s
+2020-07-02T14:50:50.062Z [service] debug: mongoose is connected with mongodb
+2020-07-02T14:50:50.063Z [service] debug: %s %s %s
+2020-07-02T14:50:53.505Z [service] debug: db closed
