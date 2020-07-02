@@ -1,0 +1,14 @@
+{
+  "name": "koog-app",
+  "version": "1.0.0",
+  "description": "## JS project Shall I use TypeScript to do this project? - No!",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
