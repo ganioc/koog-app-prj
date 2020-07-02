@@ -1,6 +1,6 @@
 const prompts = require('prompts');
 
-const onCancel = prompt => {
+const onCancel = () => {
   console.log('quit')
   process.exit(1)
 }
@@ -8,3 +8,4 @@ const onCancel = prompt => {
 const cfgObj = require('../../config/config.json')
 console.log('config:')
 console.log(cfgObj)
+
