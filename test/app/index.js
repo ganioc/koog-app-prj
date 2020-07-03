@@ -7,6 +7,5 @@ const getTimeStamp = require('../../lib/umsc/gettimestamp')
 
 console.log('\ngetbalance test:')
 
-getTimeStamp()
-
+getBalance()
 
