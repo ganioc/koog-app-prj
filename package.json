@@ -13,11 +13,13 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.0",
+    "iconv": "^3.0.0",
     "md5-hex": "^3.0.1",
     "mongoose": "^5.9.21",
     "prompts": "^2.3.2",
     "querystring": "^0.2.0",
     "request": "^2.88.2",
+    "urlencode": "^1.1.0",
     "winston": "^3.3.3",
     "winston-daily-rotate-file": "^4.5.0"
   },
