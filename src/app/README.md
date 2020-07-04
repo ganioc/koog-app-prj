@@ -1,0 +1,18 @@
+## frontend App
+
+
+```
+
+LOG_PATH=
+MAX_SESSION_TIME=72000000
+MONGO_PORT=
+MONGO_IP=
+PORT=
+MAX_SESSION_TIME=
+
+// SECRET_KEY_JWT
+
+
+```
+
+
