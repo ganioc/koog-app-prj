@@ -8,11 +8,9 @@ console.log(cfgObj)
 let platform = cfgObj.platform
 let userid = platform.ACCOUNT
 let pwd = platform.PWD
-// let ip = platform.IP
-// let port = platform.PORT
-// let url = platform.GET_BALANCE_URL
 
-getBalance(userid,
+// Choose md5 or not?
+getBalance(false, userid,
   pwd, 
   faci.getBalanceUrl(platform),
   (err, res, body)=>{
