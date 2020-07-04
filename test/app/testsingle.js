@@ -9,14 +9,16 @@ let platform = cfgObj.platform
 let userid = platform.ACCOUNT
 let pwd = platform.PWD
 
-reqSingleSend(false, userid,
+reqSingleSend(true, 'plain', userid,
   pwd,
   faci.getSingleSendUrl(platform),
   '18621661947',
-  'Hello 123456',
+  'Hello 123456' + platform.TAG,
   (err, res, body) => {
     if (err) {
+      console.log(err)
       console.log('wrong single_send')
+
     } else {
       // console.log('res:', res)
       console.log('body:', body)

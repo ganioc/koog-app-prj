@@ -10,7 +10,7 @@ let userid = platform.ACCOUNT
 let pwd = platform.PWD
 
 // Choose md5 or not?
-getBalance(false, userid,
+getBalance(true, userid,
   pwd, 
   faci.getBalanceUrl(platform),
   (err, res, body)=>{
