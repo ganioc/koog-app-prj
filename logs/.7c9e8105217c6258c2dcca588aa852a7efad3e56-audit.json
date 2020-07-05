@@ -14,6 +14,11 @@
             "date": 1593833981943,
             "name": "logs/2020_07_Sa.combined.log",
             "hash": "0bb632df02c37a071ea447275ce1519a"
+        },
+        {
+            "date": 1593920010675,
+            "name": "logs/2020_07_Su.combined.log",
+            "hash": "30495b11dfe242a26e70d7af6a488df4"
         }
     ]
 }
