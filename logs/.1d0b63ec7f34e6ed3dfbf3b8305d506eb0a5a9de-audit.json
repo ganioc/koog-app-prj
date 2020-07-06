@@ -19,6 +19,11 @@
             "date": 1593920010674,
             "name": "logs/2020_07_Su.error.log",
             "hash": "79d03fb7c88358567ad17644deffb0f9"
+        },
+        {
+            "date": 1593999290781,
+            "name": "logs/2020_07_Mo.error.log",
+            "hash": "cb449c4d6e31e5e362234a721eabf898"
         }
     ]
 }

@@ -9,11 +9,11 @@ let platform = cfgObj.platform
 let userid = platform.ACCOUNT
 let pwd = platform.PWD
 
-reqSingleSend(true, 'plain', userid,
+reqSingleSend(true, 'urlencode', userid,
   pwd,
   faci.getSingleSendUrl(platform),
   '18621661947',
-  'Hello 123456' + platform.TAG,
+  'Hello World 大家 123456' + platform.TAG,
   (err, res, body) => {
     if (err) {
       console.log(err)
