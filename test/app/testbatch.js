@@ -15,7 +15,7 @@ reqBatchSend(true, 'urlencode',userid,
   faci.getBatchSendUrl(platform),
   '18621661947,13041686656',
   'Hello 你好 123456' + platform.TAG,
-  (err, res, body) => {
+  (err, response, body) => {
     if (err) {
       console.log('wrong batch_send')
     } else {
