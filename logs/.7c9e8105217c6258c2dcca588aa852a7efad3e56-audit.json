@@ -24,6 +24,11 @@
             "date": 1593999290782,
             "name": "logs/2020_07_Mo.combined.log",
             "hash": "57ec04570cd7ce5f1b0a167b4135317a"
+        },
+        {
+            "date": 1594087203688,
+            "name": "logs/2020_07_Tu.combined.log",
+            "hash": "13fc00d2b4114fcd2e7d85a8b35ede07"
         }
     ]
 }
