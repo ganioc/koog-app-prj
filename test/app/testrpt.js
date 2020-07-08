@@ -1,11 +1,12 @@
 const getRpt = require('../../lib/umsc/getrpt')
 const cfgObj = require('../../config/config.json')
 const faci = require('../../lib/facility')
-const MsgModel = require('../../lib/db/model/msg')
+// const MsgModel = require('../../lib/db/model/msg')
 const logger = require('../../lib/logger')
-const plusUser = require('../../lib/db/api/plusUser')
-const setMsgton = require('../../lib/db/api/setMsgton')
-const ErrCode = require('../../lib/err')
+// const plusUser = require('../../lib/db/api/plusUser')
+// const setMsgton = require('../../lib/db/api/setMsgton')
+// const ErrCode = require('../../lib/err')
+const handleRpt = require('../../lib/db/api/handlerpt')
 
 console.log('config:')
 console.log(cfgObj)
@@ -14,6 +15,7 @@ let platform = cfgObj.platform
 let userid = platform.ACCOUNT
 let pwd = platform.PWD
 
+/*
 function handleRpt(rpt){
   logger.debug('start handle Rpt')
   return new Promise((resolve)=>{
@@ -75,19 +77,20 @@ function handleRpt(rpt){
     }
   })
 }
+*/
 
 // Choose md5 or not?
 getRpt(true, userid,
   pwd,
   faci.getRptUrl(platform),
-  5,
+  100,
   async (err, res, body) => {
     if (err) {
       console.log('wrong getBalance')
     } else {
       // console.log('res:', res)
       console.log('body:', body)
-      console.log(typeof body)
+      // console.log(typeof body)
       // parse rpts
 
       try{
@@ -105,9 +108,6 @@ getRpt(true, userid,
       }catch(e){
         console.log('wrong parsing body')
       }
-
-      // for every rpt
-
     }
   }
 )
