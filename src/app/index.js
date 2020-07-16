@@ -12,6 +12,7 @@ const authRouter = require('../../lib/routes/auth')
 const adminRouter = require('../../lib/routes/admin')
 const userRouter = require('../../lib/routes/user')
 const authJWT = require('../../lib/routes/jwt')
+const agentRouter = require('../../lib/routes/agent')
 
 const ErrCode = require('../../lib/err')
 const logger = require('../../lib/logger')
@@ -126,7 +127,7 @@ router.get('/api', authJWT, (req, res) => {
 authRouter(router);
 adminRouter(router);
 userRouter(router);
-
+agentRouter(router);
 
 app.use('/', router);
 
