@@ -45,15 +45,17 @@ let dbName = cfgObj.mongo_dbname;
 let dbIp = process.env.MONGO_IP
 let dbPort = process.env.MONGO_PORT
 
-let header = cfgObj.mongo_user + ':'
-  + encodeURIComponent(cfgObj.mongo_passwd) + '@';
+// let header = cfgObj.mongo_user + ':'
+//   + encodeURIComponent(cfgObj.mongo_passwd) + '@';
+let header = ''
 
 let uri = 'mongodb://'
   + header
   + dbIp
   + ':'
   + dbPort
-  + '/' + dbName;
+  + '/' + dbName
+  + '?replicaSet=rs0';
 
 logger.debug('mongodb uri:');
 logger.debug(uri);

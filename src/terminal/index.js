@@ -16,7 +16,7 @@ const arg = {
   mongo_passwd: cfgObj.mongo_passwd,
   mongo_dbname: cfgObj.mongo_dbname,
   mongo_ip:'127.0.0.1',
-  mongo_port:'27017',
+  mongo_port:'27011',
 }
 
 let dbi = new DB(arg);

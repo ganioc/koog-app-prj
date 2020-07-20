@@ -34,12 +34,13 @@ function DB(argObj){
     + argObj.mongo_ip
     + ':'
     + argObj.mongo_port
-    + '/' + argObj.mongo_dbname;
-
+    + '/' + argObj.mongo_dbname
+    + '?replicaSet=rs0';
+  
   logger.debug('uri: %s', uri);
 
   mongoose.connect(uri,
-    { useNewUrlParser: true })
+    { useNewUrlParser: true, useUnifiedTopology: true})
     .catch(error => {
       logger.error('Connection error')
       logger.error(util.format('%o', error))
