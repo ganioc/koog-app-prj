@@ -60,7 +60,8 @@ let work = () => {
                 logger.info('stime:' + rpt.stime)
                 logger.info('rtime:' + rpt.rtime)
               } else {
-                handleRpt(rpt)
+                logger.warning('wrong rpt received')
+                await handleRpt(rpt)
               }
             }
           }
@@ -68,7 +69,6 @@ let work = () => {
           console.log('wrong parsing body')
           logger.error(e.message)
         }
-
 
         resolve('OK')
       }
