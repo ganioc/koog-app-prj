@@ -29,8 +29,8 @@ let userid = platform.ACCOUNT
 let pwd = platform.PWD
 
 
-let work = ()=>{
-  return new Promise((resolve)=>{
+let work = () => {
+  return new Promise((resolve) => {
     logger.debug('get the report')
 
     getRpt(true, userid,
@@ -40,25 +40,35 @@ let work = ()=>{
       async (err, res, body) => {
         if (err) {
           logger.error('wrong getRpt')
+          resolve("NOK")
+          return
+        }
+        // console.log('body:', body)
+        try {
+          let bodyObj = JSON.parse(body);
+          logger.debug('result:' + bodyObj.result)
+          logger.debug('len:' + bodyObj.rpts.length)
 
-        } else {
-          // console.log('body:', body)
-          try {
-            let bodyObj = JSON.parse(body);
-            logger.debug('result:'+ bodyObj.result)
-            logger.debug('len:'+ bodyObj.rpts.length)
+          if (bodyObj.result === 0) {
+            for (let i = 0; i < bodyObj.rpts.length; i++) {
+              logger.debug('No ' + i)
+              let rpt = bodyObj.rpts[i]
 
-            if (bodyObj.result === 0) {
-              for (let i = 0; i < bodyObj.rpts.length; i++) {
-                logger.debug('No ' + i)
-                await handleRpt(bodyObj.rpts[i])
+              if (rpt.status === 0) {
+                logger.info('pass msgid: ' + rpt.msgid)
+                logger.info('mobile:' + rpt.mobile)
+                logger.info('stime:' + rpt.stime)
+                logger.info('rtime:' + rpt.rtime)
+              } else {
+                handleRpt(rpt)
               }
             }
-
-          } catch (e) {
-            console.log('wrong parsing body')
           }
+        } catch (e) {
+          console.log('wrong parsing body')
+          logger.error(e.message)
         }
+
 
         resolve('OK')
       }
@@ -67,20 +77,21 @@ let work = ()=>{
   })
 }
 
-let main = async function main(){
-  await new Promise((resolve) =>{
-    setTimeout( ()=> {
+let main = async function main() {
+  await new Promise((resolve) => {
+    setTimeout(() => {
       logger.info('worker triggered')
       resolve();
     }, DELAY);
   })
 
   await work()
+
   main()
 }
 
- main()
+main()
 
- 
+
 
 
