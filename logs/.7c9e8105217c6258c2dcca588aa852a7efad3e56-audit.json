@@ -39,6 +39,21 @@
             "date": 1594310409885,
             "name": "logs/2020_07_Fr.combined.log",
             "hash": "61360f664a943d4c32ce3bcfb9d04443"
+        },
+        {
+            "date": 1596502430868,
+            "name": "logs/2020_08_Tu.combined.log",
+            "hash": "75733c8b5f0925b6dede447344b4be66"
+        },
+        {
+            "date": 1596606788091,
+            "name": "logs/2020_08_We.combined.log",
+            "hash": "a364f845cd7ce3051b61a268879e9c55"
+        },
+        {
+            "date": 1596770376489,
+            "name": "logs/2020_08_Fr.combined.log",
+            "hash": "1e92bb917d08b2cedd80f6e9afe160b3"
         }
     ]
 }

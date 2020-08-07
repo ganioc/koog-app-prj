@@ -49,7 +49,7 @@ mongoose.connect(uri,
 
 
 
-async function main() {
+async function main () {
 
   await new Promise((resolve) => {
     setTimeout(() => {
@@ -71,6 +71,7 @@ async function main() {
       // console.log('body:', body)
       try {
         let bodyObj = JSON.parse(body);
+        logger.debug(util.format('%o', bodyObj))
         logger.debug('result:' + bodyObj.result)
         logger.debug('len:' + bodyObj.rpts.length)
 
@@ -79,7 +80,7 @@ async function main() {
             logger.debug('No ' + i)
             let rpt = bodyObj.rpts[i]
 
-            if (rpt.status !== 0) {
+            if (rpt.status === 0) {
               logger.info('pass msgid: ' + rpt.msgid)
               logger.info('mobile:' + rpt.mobile)
               logger.info('stime:' + rpt.stime)

@@ -39,6 +39,11 @@
             "date": 1594996532168,
             "name": "logs/2020_07_Fr.error.log",
             "hash": "68448534b5d3d572c6c569c1d802891e"
+        },
+        {
+            "date": 1596788111617,
+            "name": "logs/2020_08_Fr.error.log",
+            "hash": "cb619c8dd6ed7b6e06b6f2d80158c525"
         }
     ]
 }
