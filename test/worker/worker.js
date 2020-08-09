@@ -49,7 +49,7 @@ mongoose.connect(uri,
 
 
 
-async function main () {
+async function main() {
 
   await new Promise((resolve) => {
     setTimeout(() => {
@@ -62,7 +62,7 @@ async function main () {
   getRpt(true, userid,
     pwd,
     faci.getRptUrl(platform),
-    1,
+    2,
     async (err, res, body) => {
       if (err) {
         logger.error('wrong getRpt')
